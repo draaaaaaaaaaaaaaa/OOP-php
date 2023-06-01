@@ -25,7 +25,13 @@ $product3 = new Product();
 $product3 -> judul = 'Naruto';
 $product3 -> penulis = 'Kisimoto';
 $product3 -> harga = 30.000;
-var_dump($product3);
+
+$product4 = new Product();
+$product4->judul = 'Naruto Strom';
+$product4->penulis = 'Sony';
+$product4->harga= 100.000;
+
+
 
 echo "Komik : $product3->judul,$product3->penulis";
 echo $product3->test1();
