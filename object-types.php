@@ -15,7 +15,14 @@ class Product {
     }
 
     public function test1(){
-        return "$this->penulis,$this->judul";
+        return "$this->penulis";
+    }
+}
+
+class CetakIfoProduct{
+    public function cetak($product){
+        $str = "{$product->judul} | {$product -> test1()} (Rp. {$product->harga})";
+        return $str;
     }
 }
 
@@ -29,7 +36,8 @@ $product4 = new Product("Naruto Strom", "Sony",100.00);
 
 
 
-echo "Komik : $product3->judul,$product3->penulis";
-echo $product3->test1();
+
+$infoProduct1 = new CetakIfoProduct();
+echo $infoProduct1->cetak($product3);
 
 ?>
