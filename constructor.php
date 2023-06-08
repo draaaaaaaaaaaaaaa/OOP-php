@@ -12,7 +12,7 @@ class Product {
         $this->judul = $judul;
         $this->penulis= $penulis;
         $this->harga = $harga;
-    }
+    }   
 
     public function test1(){
         return "$this->penulis,$this->judul";
