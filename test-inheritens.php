@@ -11,7 +11,7 @@ class Hewan{
     public $warna;
     public $temp;
 
-    public function __construct($tipe = 'tipe', $nama = 'nama',$umur = 3,$jenis ='jenis',$warna = 'warna',$kelamin = 'kelamin')
+    public function __construct($tipe = 'tipe', $nama = 'nama',$umur = 3,$jenis ='jenis',$warna = 'warna',$kelamin = 'kelamin',$temp = "temp")
     {
         $this -> tipe = $tipe;
         $this -> nama = $nama;
@@ -19,8 +19,22 @@ class Hewan{
         $this -> jenis = $jenis;
         $this -> kelamin = $kelamin;
         $this -> warna = $warna;
+        $this -> temp = $temp;
     }
 
+}
+
+class Anjing extends Hewan
+{
+    public function InfoAnjing(){
+        $str = "Nama Anjing : {$this->nama} ,
+                umur : {$this->umur},
+                jenis : {$this->jenis},
+                warna : {$this->warna},
+                gender : {$this->kelamin}";
+
+                return $str;
+    }
 }
 
 
@@ -28,8 +42,7 @@ class Hewan{
 
 
 
-$anjing1 = new Hewan("bol", 1, "america", "ijo", "pria");
+$hewan1 = new Anjing("bul", 1, "america", "ijo", "pria");
 
-var_dump($anjing1);
-
+echo $hewan1->InfoAnjing();
 ?>
