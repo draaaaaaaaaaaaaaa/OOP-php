@@ -9,6 +9,7 @@ class Hewan{
     public $jenis;
     public $kelamin;
     public $warna;
+    public $temp;
 
     public function __construct($tipe = 'tipe', $nama = 'nama',$umur = 3,$jenis ='jenis',$warna = 'warna',$kelamin = 'kelamin')
     {
@@ -22,9 +23,7 @@ class Hewan{
 
 }
 
-class Info{
-    $str = "{{  }}"
-}
+
 
 
 
